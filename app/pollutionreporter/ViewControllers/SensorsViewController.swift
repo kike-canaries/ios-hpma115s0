@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SensorsViewController.swift.swift
 //  pollutionreporter
 //
 //  Created by Jorge Leonardo Vernaza on 10/8/18.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class SensorsViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    
 }
-
