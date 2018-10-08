@@ -11,6 +11,7 @@
 		4A1F0904216C06AD00911664 /* PublicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1F0903216C06AD00911664 /* PublicViewController.swift */; };
 		4A1F0906216C06BE00911664 /* SensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1F0905216C06BE00911664 /* SensorsViewController.swift */; };
 		4A1F0908216C06CE00911664 /* CapturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1F0907216C06CE00911664 /* CapturesViewController.swift */; };
+		4A1F090A216C08CF00911664 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A1F0909216C08CF00911664 /* GoogleService-Info.plist */; };
 		4A80E430216BF4C10026E2A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80E42F216BF4C10026E2A4 /* AppDelegate.swift */; };
 		4A80E435216BF4C20026E2A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A80E433216BF4C20026E2A4 /* Main.storyboard */; };
 		4A80E437216BF4C40026E2A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A80E436216BF4C40026E2A4 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		4A1F0903216C06AD00911664 /* PublicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicViewController.swift; sourceTree = "<group>"; };
 		4A1F0905216C06BE00911664 /* SensorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsViewController.swift; sourceTree = "<group>"; };
 		4A1F0907216C06CE00911664 /* CapturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturesViewController.swift; sourceTree = "<group>"; };
+		4A1F0909216C08CF00911664 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A80E42C216BF4C10026E2A4 /* pollutionreporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pollutionreporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A80E42F216BF4C10026E2A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A80E434216BF4C20026E2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				4A80E436216BF4C40026E2A4 /* Assets.xcassets */,
 				4A80E438216BF4C40026E2A4 /* LaunchScreen.storyboard */,
 				4A80E43B216BF4C40026E2A4 /* Info.plist */,
+				4A1F0909216C08CF00911664 /* GoogleService-Info.plist */,
 			);
 			path = pollutionreporter;
 			sourceTree = "<group>";
@@ -116,6 +119,7 @@
 				4A80E428216BF4C10026E2A4 /* Sources */,
 				4A80E429216BF4C10026E2A4 /* Frameworks */,
 				4A80E42A216BF4C10026E2A4 /* Resources */,
+				65363DDA905F7156349DFD5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A80E43A216BF4C40026E2A4 /* LaunchScreen.storyboard in Resources */,
+				4A1F090A216C08CF00911664 /* GoogleService-Info.plist in Resources */,
 				4A80E437216BF4C40026E2A4 /* Assets.xcassets in Resources */,
 				4A80E435216BF4C20026E2A4 /* Main.storyboard in Resources */,
 			);
@@ -173,6 +178,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		65363DDA905F7156349DFD5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pollutionreporter/Pods-pollutionreporter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pollutionreporter/Pods-pollutionreporter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CDBD45D6A9E148DD028AA4DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJTFZ8ETMA;
 				INFOPLIST_FILE = pollutionreporter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJTFZ8ETMA;
 				INFOPLIST_FILE = pollutionreporter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
