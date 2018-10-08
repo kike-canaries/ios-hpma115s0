@@ -34,6 +34,7 @@ This code is for [CanAir.io](http://canair.io) iOS client and reporter for [esp3
 
 - Swift 4.2
 - Cocoapods
+- Fastlane
 
 ## Compiling
 
